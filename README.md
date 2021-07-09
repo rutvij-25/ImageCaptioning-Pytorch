@@ -24,3 +24,5 @@
 
 
 <img src="https://github.com/rutvij-25/ImageCaptioning-pytorch/blob/main/test/test2.jpeg" width="250">
+
+#### a man in a red jacket and black pants is standing next to a man in a red jacket .
