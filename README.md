@@ -19,4 +19,4 @@
 ### Output
 
 <img src="https://github.com/rutvij-25/ImageCaptioning-pytorch/blob/main/test/test1.jpg" width="250">
-#### <SOS> a dog is running through a field of grass and flowers . <EOS>
+#### a dog is running through a field of grass and flowers .
