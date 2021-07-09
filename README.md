@@ -17,3 +17,5 @@
 #### Pretrained model was too heavy to upload
 
 ### Output
+
+	!(test/test1.jpg)
