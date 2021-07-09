@@ -12,7 +12,9 @@ argparser.add_argument('--n',type=int,default=25)
 
 args = argparser.parse_args()
 
-saved = torch.load('Pretrained/ImageCaptioner.pth')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+saved = torch.load('Pretrained/ImageCaptioner.pth',map_location=device)
 vocab = saved['vocabulary']
 model = saved['model']
 model.load_state_dict(saved['model_state_dict'])
