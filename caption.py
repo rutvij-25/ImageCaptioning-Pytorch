@@ -1,10 +1,24 @@
+from models import ImageCaptioner
 from PIL import Image
 import torch
 import torchvision.transforms as transform
 import torch.nn as nn
+import argparse
+
+argparser = argparse.ArgumentParser()
+
+argparser.add_argument('--hidden_size',type=int,default=512)
+argparser.add_argument('--n',type=int,default=25)
+
+args = argparser.parse_args()
+
+saved = torch.load('Pretrained/ImageCaptioner.pth')
+vocab = saved['vocabulary']
+model = saved['model']
+model.load_state_dict(saved['model_state_dict'])
 
 
-def caption_image(model,n,root,data,hidden_size):
+def caption_image(model,n,root,vocab,hidden_size):
   image = Image.open(root).convert('RGB')
   transformed_image = transform(image).unsqueeze(0)
   hidden = torch.zeros(1, 1, hidden_size)
@@ -21,11 +35,12 @@ def caption_image(model,n,root,data,hidden_size):
       output_s.append(output)
       features = torch.LongTensor([output]).unsqueeze(0)
       features = model.embedding(features)
-      if(output == data.vocab.wti.get('<EOS>')):
+      if(output == vocab.wti.get('<EOS>')):
         break
   model.to('cuda')
   model.train()  
-  return " ".join(data.vocab.to_text(output_s))
+  return " ".join(vocab.to_text(output_s))
 
 
+print(caption_image(model,args.n,vocab,args.hidden_size))
 
