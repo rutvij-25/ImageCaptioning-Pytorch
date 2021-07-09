@@ -21,3 +21,6 @@
 <img src="https://github.com/rutvij-25/ImageCaptioning-pytorch/blob/main/test/test1.jpg" width="250">
 
 #### a dog is running through a field of grass and flowers .
+
+
+<img src="https://github.com/rutvij-25/ImageCaptioning-pytorch/blob/main/test/test2.jpg" width="250">
