@@ -18,4 +18,4 @@
 
 ### Output
 
-![alt text](https://github.com/rutvij-25/ImageCaptioning-pytorch/blob/main/test/test1.jpg?raw=true)
+<img src="https://github.com/rutvij-25/ImageCaptioning-pytorch/blob/main/test/test1.jpg" width="48">
