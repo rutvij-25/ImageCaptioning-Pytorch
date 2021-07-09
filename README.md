@@ -12,3 +12,6 @@
 | ----------- | ----------- | ----------- |
 | Number of words to generate | --n | 25 |
 | Hidden  Size | --hidden_size | 512 |
+
+
+## Output
