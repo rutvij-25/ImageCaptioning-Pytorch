@@ -6,7 +6,7 @@
 
 ### caption.py
 
-```python caption.py --root 'test_img.jpg'```
+`python caption.py --root 'test_img.jpg'`
 
 | Arguement | Parse | Default |
 | ----------- | ----------- | ----------- |
