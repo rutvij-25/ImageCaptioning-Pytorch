@@ -14,6 +14,6 @@
 | Hidden  Size | --hidden_size | 512 |
 | Image to Caption | --root |  |
 
-
+#### Pretrained model was too heavy to upload
 
 ### Output
