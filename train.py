@@ -50,8 +50,8 @@ for epoch in range(EPOCHS):
   print(f'EPOCH:{epoch},LOSS:{loss}')
   if(EPOCHS % 10 == 0):
     checkpoint = {
+        'model':model,
         'model_state_dict':model.state_dict(),
-        'vocabulary':train.vocab
-
+        'vocabulary':train.vocab.wti
         }
     torch.save(checkpoint,'Pretrained/ImageCaptioner.pth')
