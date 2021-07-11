@@ -8,7 +8,7 @@
 
 `python caption.py --root 'test_img.jpg'`
 
-| Arguement | Parse | Default |
+| Argument | Parse | Default |
 | ----------- | ----------- | ----------- |
 | Number of words to generate | --n | 25 |
 | Hidden  Size | --hidden_size | 512 |
